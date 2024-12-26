@@ -1,0 +1,76 @@
+body {
+    background-color: #1E202B !important;
+    font-family: "Poppins", serif !important;
+}
+
+.borderLikeInput {
+    background-color: #262936;
+    margin-top: 1rem;
+    padding: 1.25rem;
+    border-radius: 50rem;
+}
+
+.Editing-Iframe {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    height: 320px;
+}
+
+.innerGrid {
+    background-color: #262936;
+    min-height: 100%;
+}
+
+.underline::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #0FB2DD;
+    left: 0;
+    bottom: -2px;
+    transition: ease-in-out 0.3s width;
+}
+
+.underline:hover::after {
+    width: 100%;
+}
+
+.emailInput,
+.nameInput,
+.siteInput,
+.companyInput {
+    outline: unset;
+    border: unset;
+    border: 3px transparent solid;
+    border-radius: 50rem;
+    transition: ease-in-out 0.3s border;
+}
+
+.emailInput:focus,
+.nameInput:focus,
+.siteInput:focus,
+.companyInput:focus {
+
+    border: 3px #0FB2DD solid;
+}
+
+.innerContactUs {
+    min-height: 100%;
+    background-color: #262936;
+    color: #fff;
+    padding-block: 0.75rem;
+    padding-inline: 0.75rem;
+}
+
+textarea {
+    padding-bottom: 5rem;
+    resize: none;
+}
+
+.bg-submit-input {
+    background-color: #038EC6 !important;
+    padding-inline: 3.25rem;
+    padding-block: 0.75rem;
+    margin-top: 0.5rem;
+}

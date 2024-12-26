@@ -1,0 +1,245 @@
+:root {
+    --main-font: "Roboto", "Open Sans", sans-serif;
+}
+
+a {
+    font-family: "Poppins", serif !important;
+}
+
+body {
+    /* font-family: var(--main-font) !important; */
+    font-family: "Poppins", serif !important;
+    background-color: #1E202B !important;
+}
+
+nav {
+    background-color: #1E202B !important;
+}
+
+a {
+    text-decoration: unset;
+
+}
+
+div.text a.nav-logo {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    color: rgb(232, 232, 232) !important;
+}
+
+div.edit-width {
+    width: 30%;
+}
+
+div.text p {
+    color: rgb(194, 189, 181);
+    font-size: 0.625rem;
+    line-height: 0.9375rem;
+}
+
+ul.navbar-nav li.nav-item a.nav-link {
+    color: white;
+    font-weight: 400;
+    font-size: 0.875rem;
+    font-family: var(--main-font);
+    line-height: 1.3125rem;
+    transition: color ease-in-out 0.3s;
+}
+
+ul.navbar-nav a.nav-link:hover {
+    color: rgb(0, 154, 216) !important;
+}
+
+ul.navbar-nav li.nav-item.donotHaveRounded {
+    border: 2px solid transparent;
+    transition: border 0.3s ease-in-out, color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+    border-radius: 50rem;
+    cursor: pointer;
+}
+
+ul.navbar-nav li.nav-item.donotHaveRounded:hover {
+    color: rgb(0, 154, 216);
+    border-color: rgb(13, 202, 240);
+    border-radius: 50rem;
+    color: rgb(0, 154, 216) !important;
+}
+
+div.backGroundImage {
+    background-image: url(../images/banner.png);
+    height: 50vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+input.bg-input {
+    background-color: #1E202B;
+    outline-style: none;
+    border: none;
+    color: white;
+    width: 100%;
+}
+
+div.innerImage {
+    height: 50vh;
+}
+
+.bg-find-input {
+    outline: unset;
+    border: unset;
+    position: absolute;
+    text-align: center;
+    right: 1rem;
+    padding-block: 0.75rem;
+    padding-inline: 3.875rem;
+    background-color: #009bd8e4;
+    color: white;
+}
+
+.row-index {
+    transform: translateY(-50%);
+    border: solid 5px transparent;
+    padding-inline: 0;
+    border-radius: 1rem !important;
+
+}
+
+.navDetails {
+    background-color: #2D303D;
+    color: white;
+}
+
+.stylingItemsInnerNav {
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    font-weight: 400;
+    font-family: var(--main-font);
+    color: rgb(191, 193, 200);
+}
+
+.address {
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    font-weight: 400;
+    color: rgb(191, 193, 200);
+    font-family: var(--main-font);
+}
+
+.degree {
+    font-size: 5.625rem;
+    font-weight: 700;
+    color: white;
+    font-style: normal;
+    line-height: 8.4375rem;
+}
+
+.status {
+    color: rgb(0, 154, 216) !important;
+}
+
+.innerColDash {
+    background-color: #323544;
+}
+
+.dayDetails {
+    background-color: #222530;
+}
+
+.nextDay {
+    font-weight: 700;
+    color: white;
+    line-height: 2.25rem;
+    font-size: 1.5rem;
+
+}
+
+.innerColDashMiddle {
+    background-color: #262936;
+}
+
+.innerColDashMLast {
+    background-color: #323544;
+}
+
+.innerColDash,
+.innerColDashMiddle,
+.innerColDashMLast {
+    min-height: 100%;
+}
+
+.bg-day {
+    background-color: #2D303D;
+}
+
+.edit-icons {
+    background-color: #1E202B;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+i.fa-brands {
+    color: rgb(0, 154, 216);
+    font-size: 1.25rem;
+}
+
+footer {
+    background-color: #262936;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+
+.brandsLinks {
+    transition: ease-in-out 0.3s background-color;
+}
+
+.brandsLinks i {
+    transition: ease-in-out 0.3s color;
+}
+
+.brandsLinks:hover {
+    background-color: #0CAEDC;
+}
+
+.brandsLinks:hover i {
+    color: white;
+}
+
+.bg-sub-input {
+    outline: unset;
+    border: unset;
+    position: absolute;
+    text-align: center;
+    right: 1rem;
+    padding-block: 0.75rem;
+    padding-inline: 2.675rem;
+    background-color: #009bd8e4;
+    color: white;
+}
+
+.box-modal {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.editMSg {
+    color: #fff;
+    font-size: 1.25rem;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <!-- Google-Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Google-Fonts -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/media.css" />
+
+</head>
+
+<body>
+    <!-- startNavSection -->
+    <nav class="navbar navbar-expand-lg py-5">
+        <div class="container">
+            <div class="navbar-brand d-flex">
+                <div class="edit-width me-3 d-flex align-items-center">
+                    <img src="images/logo@2x.png" class="w-100 d-block" alt="">
+                </div>
+                <div class="text d-flex flex-column">
+                    <a class="mt-3 nav-logo" href="index.html">Weather</a>
+                    <p class="">Tagline Goes Here</p>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars text-white"></i>
+            </button>
+            <div class="collapse  navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav  ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item nav-active border-2 rounded  me-4 rounded-pill border border-info">
+                        <a class="nav-link   active px-4" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item me-4 donotHaveRounded">
+                        <a class="nav-link  px-4" href="">News</a>
+                    </li>
+                    <li class="nav-item   me-4  donotHaveRounded">
+                        <a class="nav-link   px-4" href="#">Live Cameras</a>
+                    </li>
+                    <li class="nav-item   me-4  donotHaveRounded">
+                        <a class="nav-link   px-4" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item   me-4  donotHaveRounded">
+                        <a class="nav-link    px-4" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- endNavSection -->
+    <!-- startMain -->
+    <section>
+        <div class="backGroundImage position-relative">
+            <div class="innerImage d-flex container  position-relative ">
+                <input type="search" class="citySearch rounded-5 align-self-center  py-3 ps-3 bg-input "
+                    placeholder="Find Your Location...">
+                <input type="button" value="Find" class=" rounded-5  align-self-center  bg-find-input">
+            </div>
+        </div>
+        <div class="row container m-auto mt-5 row-index rounded rounded-2 overflow-hidden">
+            <div class="col-12 col-lg-4 px-0 ">
+                <div class="innerColDash d-flex justify-content-between align-items-center flex-column  ">
+                    <div class="d-flex container justify-content-between align-items-center navDetails py-2 ">
+                        <p class="m-0 stylingItemsInnerNav dayOne"></p>
+                        <p class="m-0 stylingItemsInnerNav DayAndMonth"></p>
+                    </div>
+                    <div class="  container address currentAddress"></div>
+                    <div class="container degree d-flex align-items-center">
+                        <div class="me-3 currentDegree">
+
+                        </div>
+                        <div>
+                            <img src="" alt="" class="currentIcon">
+                        </div>
+                    </div>
+                    <div class="container status stylingItemsInnerNav currentStatus">
+
+                    </div>
+                    <div class="stylingItemsInnerNav  d-flex container align-items-center">
+                        <p class="m-0 py-3 pe-3"><i class="fa-solid fa-umbrella"></i> 20%</p>
+                        <p class="m-0 py-3 pe-3"><i class="fa-solid fa-wind"></i> 18km/h</p>
+                        <p class="m-0 py-3 "><i class="fa-solid fa-compass"></i> East</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 px-0 ">
+                <div class="innerColDashMiddle  d-flex justify-content-between align-items-center flex-column">
+                    <p class="stylingItemsInnerNav mb-0 w-100 text-center dayDetails py-2 dayTwo"></p>
+                    <div class="">
+                        <img src="" class="w-100 d-block nexDayIcon" alt="">
+                    </div>
+                    <div class="degrees text-center">
+                        <p class="nextDay nextDayDegreeUP"></p>
+                        <p class="text-white-50 nextDayDegreeDown"></p>
+                        <p class="status sunnyBottom expextedStatus"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 px-0 ">
+                <div class="innerColDashMLast  d-flex justify-content-between align-items-center flex-column">
+                    <p class="stylingItemsInnerNav mb-0 w-100 text-center bg-day py-2 afterTomowroo"></p>
+                    <div class="">
+                        <img src="" class="w-100 d-block dayThreeImage" alt="">
+                    </div>
+                    <div class="degrees text-center">
+                        <p class="nextDay thirdDayDegreeUp"></p>
+                        <p class="text-white-50 thirdDayDegreeDown"></p>
+                        <p class="status statusBottom StatusText"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- endMain -->
+    <footer class=" d-flex justify-content-between align-items-center flex-column">
+        <form action="" class="d-flex container  position-relative mt-3">
+            <input type="email" autocomplete="off" class="emailInputSub rounded-5 align-self-center py-3 ps-3 bg-input"
+                placeholder="Enter Email To Subscribe...">
+            <input type="button" value="Subscribe" class="emailsubmit rounded-5  align-self-center  bg-sub-input">
+        </form>
+        <p class="text-danger mt-2 d-none alertMessage">Put Vaild Mail <i class="fa-solid fa-circle-info"></i></p>
+        <ul class="d-flex  w-50 justify-content-center my-2">
+            <a href="https://www.facebook.com/">
+                <li class="edit-icons me-1 brandsLinks"><i class="fa-brands fa-facebook-f"></i></li>
+            </a>
+            <a href="https://x.com/?lang=en">
+                <li class="edit-icons me-1 brandsLinks"><i class="fa-brands fa-twitter"></i></li>
+            </a>
+            <a href="https://support.google.com/answer/2451065?hl=en">
+                <li class="edit-icons me-1 brandsLinks"><i class="fa-brands fa-google-plus-g"></i></li>
+            </a>
+            <a href="https://www.pinterest.com/">
+                <li class="edit-icons brandsLinks"><i class="fa-brands fa-pinterest"></i></li>
+            </a>
+        </ul>
+        <p class="stylingItemsInnerNav text-center container">Copyright &copy; 2014 Company name. Designed by Themezy.
+            All rights reserved</p>
+    </footer>
+    <div class="box-modal d-none">
+        <p class="editMSg">Successfully Subscribed <i class="text-success fa-regular fa-circle-check"></i> </p>
+
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
